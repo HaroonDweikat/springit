@@ -1,5 +1,6 @@
 package com.vega.springit.domain;
 
+import com.sun.istack.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
@@ -21,6 +22,7 @@ public class Comment extends Auditable {
 
     //link
     @ManyToOne
+    @NotNull
     private Link link;
 
 
